@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="/assets/css/boxicons.min.css">
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+        <!--=============== CSS ===============-->
+        
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/maruf.css">
+
+        <title>Responsive bottom navigation</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Marlon</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-message-alt nav__icon'></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="message.html" class="nav__link">
+                                <i class='bx bx-message-square-dots nav__icon'></i>
+                                <span class="nav__name">Message</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#search" class="nav__link">
+                                <i class='bx bx-search-alt nav__icon'></i>
+                                <span class="nav__name">Search</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#mep" class="nav__link">
+                                <i class='bx bx-map nav__icon'></i>
+                                <span class="nav__name">Map</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="search_box" >
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                     <div class="search-box">
+                        <input type="text" placeholder="Search Hear">
+                    </div>
+                </div>
+                
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                    <img src="img/profile-pic.png">
+                </div>
+
+                <!--------------------- setting-menu ---------------------------------------->
+                <div class="setting-menu">
+                    <div id="dark-btn">
+                        <span></span>
+                    </div>
+                    <div class="setting-menu-inner">
+                        <div class="user-profile">
+                            <img src="img/profile-pic.png">
+                            <div>
+                                <p> Faiaz </p>
+                                <a href="profile.html">See Your Profile</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="user-profile">
+                            <img src="img/feedback.png">
+                            <div>
+                                <p> Giv Feed Back </p>
+                                <a href="">Help us</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting-link">
+                            <img src="img/setting.png" class="setting-icon">
+                            <a href="">Setting & Privacy <img src="img/arrow.png" width="10px"></a>
+                        </div>
+                        <div class="setting-link">
+                            <img src="img/help.png" class="setting-icon">
+                            <a href=""> Help & Support <img src="img/arrow.png" width="10px"></a>
+                        </div>
+                        <div class="setting-link">
+                            <img src="img/display.png" class="setting-icon">
+                            <a href=""> Display & Accessibility <img src="img/arrow.png" width="10px"></a>
+                        </div>
+                        <div class="setting-link">
+                            <img src="img/logout.png" class="setting-icon">
+                            <a href="login.html"> Logout <img src="img/arrow.png" width="10px"></a>
+                        </div>
+                    </div>
+            </nav>
+        </header>
+        <!--------------------- Nave Bar End ---------------------------------------->
+        
+        <!--=============== MAIN Start ===============-->
+        <main class="main">
+            <div class="containermain">
+                <!-- Filter Section -->
+                <div class="filter-section">
+                    <select>
+                        <option>AB+</option>
+                        <option>A+</option>
+                        <option>B+</option>
+                    </select>
+                    <select>
+                        <option>Mymensingh</option>
+                        <option>Dhaka</option>
+                        <option>Rajshahi</option>
+                    </select>
+                    <select>
+                        <option>Haluaghat</option>
+                    </select>
+                    <select>
+                        <option>Dhara</option>
+                    </select>
+                    <input type="text" placeholder="Last Donate Date">
+                    <input type="text" placeholder="Now Date">
+                    <button type="submit" class="btn filter_search">
+
+                        <i class="fa fa-search icon" aria-hidden="true"></i>
+                    </button>
+                </div>
+        
+                <!-- Cards Section -->
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="coverbgimage">
+                            <h3>Junayed Rahman Faiaz</h3>
+                            <h4>AB+ Blood Doner</h4>
+                        </div>
+                        <img src="img/profile.png" alt="Profile Image">
+                        <p>Mymensingh, Haluaghat, Dhara</p>
+                        <div class="cardbtn">
+                            <button class="btn view">View Profile</button>
+                            <button class="btn message">Message</button>
+                        </div>
+                        <div class="timer">
+                            <p><span>120</span><br> Day</p>
+                            <p><span>23</span> <br> Hour</p>
+                            <p><span>59</span><br> Minute</p>
+                            <p><span>50</span><br> Second</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="coverbgimage">
+                            <h3>Junayed Rahman Faiaz</h3>
+                            <h4>AB+ Blood Doner</h4>
+                        </div>
+                        <img src="img/profile.png" alt="Profile Image">
+                        <p>Mymensingh, Haluaghat, Dhara</p>
+                        <div class="cardbtn">
+                            <button class="btn view">View Profile</button>
+                            <button class="btn message">Message</button>
+                        </div>
+                        <div class="timer">
+                            <p><span>120</span><br> Day</p>
+                            <p><span>23</span> <br> Hour</p>
+                            <p><span>59</span><br> Minute</p>
+                            <p><span>50</span><br> Second</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="coverbgimage">
+                            <h3>Junayed Rahman Faiaz</h3>
+                            <h4>AB+ Blood Doner</h4>
+                        </div>
+                        <img src="img/profile.png" alt="Profile Image">
+                        <p>Mymensingh, Haluaghat, Dhara</p>
+                        <div class="cardbtn">
+                            <button class="btn view">View Profile</button>
+                            <button class="btn message">Message</button>
+                        </div>
+                        <div class="timer">
+                            <p><span>120</span><br> Day</p>
+                            <p><span>23</span> <br> Hour</p>
+                            <p><span>59</span><br> Minute</p>
+                            <p><span>50</span><br> Second</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Pagination -->
+                <div class="bottomsec">
+                    <select name="page" id="bottom">
+                        <option value="">Show 12</option>
+                        <option value="">Show 24</option>
+                        <option value="">Show 36</option>
+                    </select>
+                    <div class="pagination">
+                        <a href="#" class="arrow">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">...</a>
+                        <a href="#">6</a>
+                        <a href="#" class="arrow">&raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--=============== MAIN End ===============-->
+
+
+        <!--=============== MAIN JS ===============-->
+        <script src="https://kit.fontawesome.com/c64519cdb1.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
