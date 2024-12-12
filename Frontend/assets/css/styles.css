@@ -139,10 +139,11 @@ img {
 }
 
 .search-box {
-  right: 17.7%;
+  right: 21%;
+  margin-top: -30px;
   background: #efefef;
   position: absolute;
-  width: 52%;
+  width: 20%;
   border-radius: 20px;
   display: none;
   align-items: center;
@@ -278,7 +279,7 @@ img {
     margin-top: 0px;
   }
   .search-box {
-    margin-right: 8%;
+    margin-right: 4%;
     height: 32px;
     width: 50%;
     margin-top: -27px;

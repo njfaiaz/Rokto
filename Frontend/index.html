@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== BOXICONS ===============-->
-        <link rel="stylesheet" href="/assets/css/boxicons.min.css">
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/boxicons.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+        <link rel="stylesheet" href="assets/css/flatpickr.min.css">
 
         <!--=============== CSS ===============-->
         
@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="assets/css/maruf.css">
 
         <title>Responsive bottom navigation</title>
+
     </head>
     <body>
         <!--=============== HEADER ===============-->
@@ -58,7 +59,7 @@
 
 
                 <div class="search_box" >
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <i class="fa fa-search search_box_hide"></i>
                      <div class="search-box">
                         <input type="text" placeholder="Search Hear">
                     </div>
@@ -132,12 +133,15 @@
                     <select>
                         <option>Dhara</option>
                     </select>
-                    <input type="text" placeholder="Last Donate Date">
-                    <input type="text" placeholder="Now Date">
-                    <button type="submit" class="btn filter_search">
+                    
+                     <input type="date" id="custom-date" class="custom-date-picker" placeholder="Last Donate Time"/>
+                     <input type="date" id="custom-date" class="custom-date-picker" placeholder="Last Donate Time"/>
+                    <div>
 
-                        <i class="fa fa-search icon" aria-hidden="true"></i>
-                    </button>
+                        <a href="#"  class="btn filter_search">
+                           <i class="fa fa-search icon"></i>
+                       </a>
+                    </div>
                 </div>
         
                 <!-- Cards Section -->
@@ -226,6 +230,18 @@
         <!--=============== MAIN JS ===============-->
         <script src="https://kit.fontawesome.com/c64519cdb1.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="assets/js/flatpickr.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <script>
+              flatpickr("#custom-date", {
+    dateFormat: "Y-m-d",
+    allowInput: true,
+  });
+        </script>
+
+        
     </body>
 </html>
+
+

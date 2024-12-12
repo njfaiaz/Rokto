@@ -46,6 +46,29 @@ body {
   color: #999;
 }
 
+.filter-section a .icon {
+  color: #fff;
+  font-size: 18px;
+}
+input[type="date"] {
+  appearance: none; /* Removes default styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus {
+  border-color: #009688;
+}
 /* Cards Section */
 .card-container {
   display: grid;
@@ -98,11 +121,13 @@ main {
     display: none;
   }
   .filter_search {
-    background-color: blue;
+    background-color: rgb(204 204 204);
     width: 100%;
+    padding: 6px 70px;
+    border-radius: 7px;
   }
-  .filter_search.icon {
-    text-align: end;
+  .filter_search .icon {
+    margin-inline-start: auto;
   }
 }
 .card {
